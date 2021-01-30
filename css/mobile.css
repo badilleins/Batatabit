@@ -117,12 +117,153 @@ main{
     line-height:2.6rem;
 }
 .main-exchange__information p{
-    margin-bottom 30px;;
+    margin-bottom: 30px;
     font-size: 1.4rem;
     font-weight: 500;
     color:#757575;
     line-height:1.6rem;
 }
+.main__currency-table{
+    width: 70%;
+    min-width: 235px;
+    max-width:500px;
+    height:360px;
+    margin:0 auto;
+    font-family: "Inter" , sans-serif;
+}
+.currency-table__title{
+    color: var(--bitcoin-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height:2.3rem;
+    margin-bottom: 15px;
+}
+.currency-table__container{
+    width:90%;
+    min-width:230px;
+    max-width:300px;
+    height:250px;
+    margin:0 auto;
+}
+.currency-table__container table {
+    background:var(--just-light);
+    height:100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.currency-table__container table td {
+    padding: 8px;
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height:2rem;
+    color:var(--grey);
+}
+.currency-table__container .table__right{
+    font-size: 1.4rem;
+    font-weight:normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.main-exchange__table table td:first-child{
+    color:#B5B0AC;
+    text-align:start;
+}
+.main-exchange__table .table__right{
+    color:#757575;
+    padding-left:15px;
+}    
+table span{
+    display: inline-block;
+    background-image: url("../assets/icons/redArrow.svg");
+    width:12px;
+    height:12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: end;
+    margin-left: 10px;
+}
+.currency-table__container .trending__up{
+    display: inline-block;
+    background-image: url("../assets/icons/greenArrow.svg");
+    width: 12px;
+    height: 12px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-left:10px;
+}
+.currency-table__date{
+    background: var(--soft-color1);
+    border-radius: 4px;
+    width:max-content;
+    height: 30px;
+    margin:15px auto 0;
+    padding:8px;
+    color:var(--warm-dark);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.main__commissions-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px ;
+    height: 360px;
+    margin:0 auto;
+    font-family: "Inter" , sans-serif;
+}
+.commissions-table__title{
+    color:var(--secondary-color);
+    font-size: 1.8rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    line-height: 2.3rem;
+    margin: 15px 0;
+}
+.commissions-table__container{
+    width: 90%;
+    min-width: 235px;
+    max-width:300px;
+    height: 250px;
+    margin:0 auto;
+}
+.commissions-table__container table{
+    background:var(--just-light);
+    margin:0 auto;
+    height: 100%;
+    width:100%;
+    border-radius: 15px;
+    padding:8px;
+
+}
+.commissions-table__container table td{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color:#757575;
+}
+.commissions-table__container .table__right{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #757575;
+    line-height: 1.6rem;
+}
+.commissions-table__date{
+    margin: 15px auto 0;
+    border-radius: 4px;
+    background: var(--soft-color2) ;
+    height: 30px;
+    width: max-content;
+    padding: 8px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--dark);
+    font-weight: 300;
+}
+
+
+
 
 
 
