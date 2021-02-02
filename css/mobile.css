@@ -123,7 +123,7 @@ main{
     color:#757575;
     line-height:1.6rem;
 }
-.main__currency-table{
+.main__currency-table, .main__commissions-table{
     width: 70%;
     min-width: 235px;
     max-width:500px;
@@ -131,27 +131,33 @@ main{
     margin:0 auto;
     font-family: "Inter" , sans-serif;
 }
-.currency-table__title{
+.currency-table__title, .commissions-table__title{
     color: var(--bitcoin-color);
     font-weight: bold;
     font-size: 1.8rem;
     line-height:2.3rem;
     margin-bottom: 15px;
+    text-align: start;
+    margin-left:30px;
 }
-.currency-table__container{
+.commissions-table__title{
+    color:var(--secondary-color);
+    font-family: "DM Sans", sans-serif;
+}
+.currency-table__container, .commissions-table__container{
     width:90%;
     min-width:230px;
     max-width:300px;
     height:250px;
     margin:0 auto;
 }
-.currency-table__container table {
+.currency-table__container table, .commissions-table__container table  {
     background:var(--just-light);
     height:100%;
     width: 100%;
     border-radius: 15px;
 }
-.currency-table__container table td {
+.currency-table__container table td, .commissions-table__container table td {
     padding: 8px;
     width: 50%;
     font-size: 1.6rem;
@@ -159,7 +165,10 @@ main{
     line-height:2rem;
     color:var(--grey);
 }
-.currency-table__container .table__right{
+.commissions-table__container table td{
+    color:#757575;
+}
+.currency-table__container .table__right .commissions-table__container .table__right{
     font-size: 1.4rem;
     font-weight:normal;
     line-height: 1.7rem;
@@ -168,6 +177,7 @@ main{
 .main-exchange__table table td:first-child{
     color:#B5B0AC;
     text-align:start;
+
 }
 .main-exchange__table .table__right{
     color:#757575;
@@ -194,7 +204,7 @@ table span{
     background-position: center;
     margin-left:10px;
 }
-.currency-table__date{
+.currency-table__date, .commissions-table__date{
     background: var(--soft-color1);
     border-radius: 4px;
     width:max-content;
@@ -205,61 +215,9 @@ table span{
     font-weight: 300;
     font-size: 1.2rem;
 }
-
-.main__commissions-table{
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px ;
-    height: 360px;
-    margin:0 auto;
-    font-family: "Inter" , sans-serif;
-}
-.commissions-table__title{
-    color:var(--secondary-color);
-    font-size: 1.8rem;
-    font-family: "DM Sans", sans-serif;
-    font-weight: bold;
-    line-height: 2.3rem;
-    margin: 15px 0;
-}
-.commissions-table__container{
-    width: 90%;
-    min-width: 235px;
-    max-width:300px;
-    height: 250px;
-    margin:0 auto;
-}
-.commissions-table__container table{
-    background:var(--just-light);
-    margin:0 auto;
-    height: 100%;
-    width:100%;
-    border-radius: 15px;
-    padding:8px;
-
-}
-.commissions-table__container table td{
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    color:#757575;
-}
-.commissions-table__container .table__right{
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #757575;
-    line-height: 1.6rem;
-}
 .commissions-table__date{
-    margin: 15px auto 0;
-    border-radius: 4px;
     background: var(--soft-color2) ;
-    height: 30px;
-    width: max-content;
-    padding: 8px;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
     color: var(--dark);
-    font-weight: 300;
 }
 .main__product-detail{
     position:relative;
@@ -299,7 +257,7 @@ table span{
 .cards-container__card{
     min-width:288px;
     max-width:400px;
-    height:158px;
+    min-height:158px;
     text-align: start;
     padding:15px;
     margin:0 auto 12px ;
