@@ -125,13 +125,27 @@ main{
     color:#757575;
     line-height:1.6rem;
 }
+.main-exchange__table{
+    display: flex;
+    height:400px;
+    overflow-x: scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x majority;
+    margin: 0 40px 0 20px; 
+}
+.slide-container{
+    width:100%;
+    margin: 20px;
+}
 .main__currency-table, .main__commissions-table{
     width: 70%;
     min-width: 235px;
     max-width:500px;
     height:360px;
-    margin:0 auto;
+    margin:0 auto ;
     font-family: "Inter" , sans-serif;
+    text-align: center;
+    scroll-snap-align:center;
 }
 .currency-table__title, .commissions-table__title{
     color: var(--bitcoin-color);
@@ -301,6 +315,7 @@ table span{
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
+    background-attachment: fixed;
     width: 100%;
     min-width:320px;
     min-height:50vh;
@@ -493,4 +508,39 @@ ul li{
 }
 .plans-container--slider::-webkit-scrollbar-thumb{
   background-color: var(--bitcoin-color);
+}
+
+
+footer{
+    display: flex;
+    background: var(--bitcoin-color);
+    font-weight:500;
+    line-height: 1.8rem;
+    min-height: 150px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer section{
+    display: flex;
+    justify-content: center;
+    width:50%;
+    align-items: center;
+}
+footer .left ul{
+    color: var(--just-light);
+    list-style: none;
+    font-size:1.4rem;
+}
+footer .left li{
+    padding-top:10px;
+}
+footer .left a{
+    text-decoration: none;
+    color: var(--just-light); 
+}
+footer .right{
+    color: var(--soft-color1);
+    font-size: .8rem;  
+    justify-content:flex-end;
 }
