@@ -1,0 +1,52 @@
+html{
+	font-size:75%;
+}
+header img{
+	height:48px;
+	width:300px;
+}
+.main-exchange__bitcoin{
+	width: 300px;
+	height: 300px;
+}
+.main-exchange__table {
+	width:930px;
+	margin:0  auto;
+}
+.plans-container--slider{
+	justify-content: center;
+	overflow: visible;
+	}
+.product-detail__cards-container{
+	display:flex;
+	flex-wrap: wrap;
+	width:930px;
+	margin: 0 auto;
+}
+.left ul li{
+	display: inline-block;
+	margin: 20px;
+}
+footer .right {
+	display: flex;
+	justify-content: center;
+}
+footer .right figure{
+	width:100px;
+	height: 50px;
+	position: relative;
+}
+footer .right img{
+	width: 100%;	
+}
+footer .right figcaption{
+	font-size: 1.8rem;
+	position: absolute;
+    top: calc(100% - 28px);
+    left: calc(100% - -3px);
+    color: var(--off-light);
+
+}
+.bitcoin-img-container{
+	background-attachment: fixed;
+}

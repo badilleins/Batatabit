@@ -66,7 +66,7 @@ header img{
     background:var(--off-light);
     text-decoration: none;
     padding:15px;
-    width:229px;
+    min-width:229px;
     height:48px;
     font-weight:bold;  
     font-size:1.4rem;
@@ -138,6 +138,7 @@ main{
     margin: 20px;
 }
 .main__currency-table, .main__commissions-table{
+    position: relative;
     width: 70%;
     min-width: 235px;
     max-width:500px;
@@ -315,7 +316,6 @@ table span{
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
-    background-attachment: fixed;
     width: 100%;
     min-width:320px;
     min-height:50vh;
@@ -356,7 +356,7 @@ table span{
 }
 .plans-container--slider{
     display: flex;
-    height:316px;
+    min-height:320px;
     overflow-x: scroll;
     overscroll-behavior-x:contain;
     scroll-snap-type:x proximity;
@@ -367,7 +367,7 @@ table span{
     width:70%;
     min-width: 190px;
     max-width: 300px;
-    height:250px;
+    min-height:250px;
     margin:50px 10px 0;
     padding:0 15px;
     border-radius: 15px;
@@ -383,6 +383,7 @@ table span{
 }
 .shadow3{
     box-shadow: 0px 4px 8px #0B173B;
+    margin-right: 10px;
 }
 .plans-container__card > p{
     position: absolute;
@@ -442,8 +443,8 @@ table span{
     position: absolute;
     top: calc(100% - 68px);
     left: calc(50% - 75px);
-    width:150px;
-    height:48px;
+    min-width:150px;
+    min-height:48px;
     border-radius: 4px;
     padding:12px 16px;
     font-weight: bold;
@@ -509,8 +510,6 @@ ul li{
 .plans-container--slider::-webkit-scrollbar-thumb{
   background-color: var(--bitcoin-color);
 }
-
-
 footer{
     display: flex;
     background: var(--bitcoin-color);
@@ -542,5 +541,21 @@ footer .left a{
 footer .right{
     color: var(--soft-color1);
     font-size: .8rem;  
-    justify-content:flex-end;
+}
+footer .right img{
+    padding-left: 30px;
+}
+footer .right figcaption{
+    font-size: 1.2rem;
+}
+.main__currency-table .otherTable{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(100% + 10px);
+    display: inline-block;
+    background-image: url("../assets/icons/arrow_down.svg");
+    width:20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
