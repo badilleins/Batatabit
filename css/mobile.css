@@ -221,6 +221,17 @@ table span{
     background-position: center;
     margin-left:10px;
 }
+.main__currency-table .otherTable{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(100% + 10px);
+    display: inline-block;
+    background-image: url("../assets/icons/arrow_down.svg");
+    width:20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .currency-table__date, .commissions-table__date{
     background: var(--soft-color1);
     border-radius: 4px;
@@ -548,14 +559,4 @@ footer .right img{
 footer .right figcaption{
     font-size: 1.2rem;
 }
-.main__currency-table .otherTable{
-    position: absolute;
-    top: calc(50% - 10px);
-    left: calc(100% + 10px);
-    display: inline-block;
-    background-image: url("../assets/icons/arrow_down.svg");
-    width:20px;
-    height: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
