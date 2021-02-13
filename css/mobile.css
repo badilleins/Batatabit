@@ -361,7 +361,7 @@ table span{
 .plans-container__head p{
     padding-top: 30px;
     font-weight: 500;
-    font-size:1.4rem;
+    font-size:1.5rem;
     line-height: 1.8rem;
     color:#757575;
 }
@@ -548,6 +548,9 @@ footer .left li{
 footer .left a{
     text-decoration: none;
     color: var(--just-light); 
+}
+footer .left a:hover{
+    text-decoration: underline;
 }
 footer .right{
     color: var(--soft-color1);

@@ -12,6 +12,13 @@ header img{
 .main-exchange__table {
 	width:930px;
 	margin:0  auto;
+	overflow-x: hidden;
+}
+.main__currency-table .otherTable{
+	display: none;
+}
+.bitcoin-img-container{
+	background-attachment: fixed;
 }
 .plans-container--slider{
 	justify-content: center;
@@ -39,14 +46,13 @@ footer .right figure{
 footer .right img{
 	width: 100%;	
 }
+footer .right img:hover{
+	transform: scale(1.1);
+}
 footer .right figcaption{
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	position: absolute;
     top: calc(100% - 28px);
     left: calc(100% - -3px);
     color: var(--off-light);
-
-}
-.bitcoin-img-container{
-	background-attachment: fixed;
 }
