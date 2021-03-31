@@ -9,3 +9,6 @@ On the page we have:
 
 ## Responsive
 You can view this page on any device, because I made the landing page responsive for different resolutions like computers, cell phones, and tablets.
+
+### Look at the page 
+<https://badilleins.github.io/Batatabit/>
